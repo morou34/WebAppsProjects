@@ -1,0 +1,171 @@
+\documentclass{article}
+\usepackage[utf8]{inputenc}
+\usepackage{supertabular}
+\usepackage[T1]{fontenc}
+\usepackage{icomma}
+\usepackage{array} 
+\usepackage{color}
+\usepackage{amsmath,mathtools}
+\usepackage{amssymb,amsfonts}
+\usepackage{esint}
+\usepackage{multirow}
+\usepackage{float}
+\usepackage{graphicx}
+\usepackage{tikz}
+\usepackage{tcolorbox}
+\usepackage{enumitem}
+\usepackage[ampersand]{easylist}
+\usepackage{subfigure}
+\usepackage{hhline}
+\usepackage{datetime}
+\usepackage{lmodern}
+\usepackage{fancyhdr}
+\usepackage{datetime}
+\usepackage{fancyhdr}
+\usepackage{float}
+\usepackage{amsmath}
+\usepackage{hyperref}
+\usepackage{datetime}  
+\usepackage[utf8]{inputenc}
+\usepackage{booktabs}
+\usepackage{array}
+\usepackage{titling}
+\usepackage{sectsty}
+\usepackage{graphicx}
+\usepackage{fancyhdr}
+\usepackage[left=2.5cm,right=2.5cm,top=3cm,bottom=3cm]{geometry}
+\usepackage[french]{babel}
+% \usepackage[french, english]{babel}
+\usepackage{caption}
+\usepackage[bottom]{footmisc}
+\usepackage{gensymb}
+\usepackage{tabulary}
+\usepackage{fancyhdr}
+\usepackage[separate-uncertainty=true, per-mode=fraction]{siunitx}
+\usepackage{textcomp}
+\usepackage[RPvoltages]{circuitikz}
+\newcommand{\HRule}{\rule{\linewidth}{0.5mm}}
+\usepackage{parskip}
+
+\setlength{\parindent}{20pt}
+\setlength{\parskip}{15pt}
+\setlength\extrarowheight{2pt}
+
+
+\pagestyle{fancy}
+\usepackage{lastpage}
+\renewcommand\headrulewidth{1pt}
+\usepackage[sorting=none]{biblatex}
+\addbibresource{Bibliography.bib}  
+\usepackage{csquotes}
+\usepackage{calligra}
+\usepackage{physics}
+\usepackage{listings}
+\usepackage{xcolor}
+
+\definecolor{codegreen}{rgb}{0,0.6,0}
+\definecolor{codegray}{rgb}{0.5,0.5,0.5}
+\definecolor{codepurple}{rgb}{0.58,0,0.82}
+\definecolor{backcolour}{rgb}{0.95,0.95,0.92}
+
+\lstdefinestyle{mystyle}{
+    backgroundcolor=\color{backcolour},   
+    commentstyle=\color{codegreen},
+    keywordstyle=\color{magenta},
+    numberstyle=\tiny\color{codegray},
+    stringstyle=\color{codepurple},
+    basicstyle=\ttfamily\footnotesize,
+    breakatwhitespace=false,         
+    breaklines=true,                 
+    captionpos=b,                    
+    keepspaces=true,                 
+    numbers=left,                    
+    numbersep=5pt,                  
+    showspaces=false,                
+    showstringspaces=false,
+    showtabs=false,                  
+    tabsize=2
+    }
+    
+\lstset{style=mystyle}
+\DeclareFontShape{T1}{calligra}{m}{n}{<->s*[2.2]callig15}{}
+\newcommand{\scripty}[1]{\ensuremath{\mathcalligra{#1}}}
+\fancyhead[L]{\textbf{GLO-2001}}
+\fancyhead[C]{}
+\fancyhead[R]{Deep Learning}
+\renewcommand\footrulewidth{1pt}
+\fancyfoot[C]{\textbf{Page \thepage/\pageref{LastPage}}}
+\fancyfoot[R]{\today }
+\usepackage[fontsize=12pt]{fontsize}
+
+\begin{document}
+\begin{titlepage}
+  \begin{center}
+  \includegraphics[scale=0.15]{Figures/ULaval.png}
+  \line(1,0){460}\\
+  
+  \begin{large}
+  \Large{\textbf{Ingénierie des loups}}
+  \\
+  \end{large}
+  \line(1,0){460}\\
+  [1.5cm]
+  \Large{Projet de recherche}\\ 
+  [1.5cm]
+  \Large{\textbf{Réalisé par:}}\\
+  ROUANE Mouaad \\ Hamza Fellah \\ Aissam Douiri
+  
+  \vspace{1cm}
+  \Large{Maîtrise en informatique}\\
+  Antelligence artificielle \\
+  [5cm]
+  Département d'informatique\\
+  Date de remise - 18 Janvier 2024
+  \end{center} 
+  \end{titlepage}
+
+\newpage
+  \tableofcontents
+\newpage
+
+\thispagestyle{plain}
+
+
+\section{Introduction}
+\subsection{Cadre du projet}
+Ce rapport de stage reflète mon expérience au sein de 9Bio, une start-up biotechnologique de pointe basée à la Ville de Québec.\begin{figure}[H]
+\centering
+\includegraphics[width=1\textwidth]{doc_images/image1.jpg}
+\caption{\label{My_Name_is_sharky} My Name is sharky}\end{figure}L’architecture d’AlphaFold 2 (Figure 1) s’articule autour de trois étapes essentielles. D’abord, à partir de la séquence d’acides aminés fournie, le système recherche des séquences\begin{figure}[H]
+\centering
+\includegraphics[width=1\textwidth]{doc_images/image2.jpg}
+\caption{\label{I_Love_sunset} I Love sunset}\end{figure}L’architecture d’AlphaFold 2 (Figure 1) s’articule autour de trois étapes essentielles. D’abord, à partir de la séquence d’acides aminés fournie, le système recherche des séquences apparentées dans des bases de données et établit un alignement de séquences multiples (MSA), tout en identifiant des structures protéiques similaires nommées "templates".
+\subsection{Problématique : Contexte et enjeux}
+Les protéines jouent un rôle crucial dans les fonctions biologiques grâce à leurs structures uniques, déterminées par la séquence d’acides aminés qui les compose. La structure tridimensionnelle d’une protéine, telle qu’un anticorps, influence
+\section{Littérature}
+\subsection{Modèles et solutions envisagées}
+Pour résoudre notre premier défi majeur, à savoir la prédiction des structures 3D de l’anticorps après mutation, nous nous tournons vers les avancées récentes du domaine. Les méthodes de folding et designs basés sur l’apprentissage profond sont devenues l’état de l’art dans de nombreux problèmes de biologie structurale.\begin{figure}[H]
+\centering
+\includegraphics[width=1\textwidth]{doc_images/image3.jpg}
+\caption{\label{Ghost_is_Me} Ghost is Me}\end{figure}Les protéines jouent un rôle crucial dans les fonctions biologiques grâce à leurs structures uniques, déterminées par la séquence d’acides aminés qui les compose.\begin{figure}[H]
+\centering
+\includegraphics[width=1\textwidth]{doc_images/image4.jpg}
+\caption{\label{Please_add_a_caption_to_your_image} Please add a caption to your image}\end{figure}Les protéines jouent un rôle crucial dans les fonctions biologiques grâce à leurs structures uniques, déterminées par la séquence d’acides aminés qui les compose.Tableau Hello guys i'm a table\begin{table}[H]
+\centering
+\begin{tabular}{|p{3.20cm}|p{3.20cm}|p{3.20cm}|p{3.20cm}|p{3.20cm}|}
+\hline
+D & Dd & Ddd & Dd & d \\
+\hline
+Dsdf & Sdf & Sdf & Qdf & Sdf \\
+\hline
+Sd & Sdf & Sdf & Sdf & sdf \\
+\hline
+\end{tabular}
+\caption{Hello guys i'm a table}
+\label{table_1}
+\end{table}
+
+
+
+\end{document}
+

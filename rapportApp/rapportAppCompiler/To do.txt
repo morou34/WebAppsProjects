@@ -1,0 +1,17 @@
+NEXT FEATURES TO ADD:
+--------------------
+- Add Tables
+- Add table style fonctionalities
+
+BUGS AND FIXES:
+---------------
+- Multiple paragraphes under same section is considered like one paragraph.
+- appearance of \ while be considered as a command: you need to do some checking: add another \ before any appearance of it. 
+- Tables caption are collected as images captions.
+- Should add a function to detecte how many columns in a table in order to be able to  wrap the content properly, add this as an agr to your function, or just extract it from the table object.
+- If an img is the last thing in a word file it's ignored.
+- Check if it's the same for a table.
+
+
+IMPORTANT:
+++++++++++
